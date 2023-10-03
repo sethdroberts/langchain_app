@@ -3,6 +3,9 @@ import os
 import streamlit as st
 from langchain.llms import OpenAI
 
+#Remove this line while working locally to access Codespace secret
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+
 apikey = os.environ['OPENAI_API_KEY']
 
 #App framework
