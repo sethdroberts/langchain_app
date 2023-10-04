@@ -13,6 +13,7 @@ os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 apikey = os.environ['OPENAI_API_KEY']
 
 #App framework
+st.set_page_config(page_title="YouTube Script Generator", menu_items={"Report a Bug": "mailto:seth.roberts@hey.com"})
 st.title('🦜🔗 YouTube Script Generator')
 prompt = st.text_input('Plug in your prompt here')
 
